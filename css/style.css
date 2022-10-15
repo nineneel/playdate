@@ -618,6 +618,108 @@ body {
     font-size: var(--body-font-size);
 }
 
+/* ================== ABOUT US SECTION =====================*/
+.about_us_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+.about_us_logo {
+    max-width: 350px;
+}
+
+.about_us_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.about_us_desc {
+    text-align: center;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    line-height: 1.5rem;
+}
+
+.bg_about_us {
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+/* ================== FOOTER =====================*/
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.footer_sidemap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.25rem;
+}
+
+.footer_title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-extrabold);
+}
+.footer_sidemap_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+}
+
+.footer_sidemap_list_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 0.5rem;
+}
+
+.footer_sidemap_link {
+    font-size: var(--body-font-size);
+    font-weight: var(--font-medium);
+    text-decoration: none;
+    color: #000;
+}
+
+.footer_cw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.footer_cw_desc {
+    font-size: var(--body-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    line-height: 24px;
+}
+
+.footer_sosmed_container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+
+.footer_sosmed_item {
+    width: 32px;
+    height: 32px;
+}
+
 /* ================== LARGE DEVICE =====================*/
 @media screen and (min-width: 1150px) {
     .container {
@@ -644,6 +746,16 @@ body {
         border: 0;
     }
 
+    .nav_item {
+        margin: 0.5rem;
+    }
+
+    .nav_link {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
     .search_btn {
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
@@ -657,7 +769,7 @@ body {
         border-bottom-left-radius: 16px;
         border-width: 3px;
         border-right-width: 0;
-        margin-left: 2.5rem;
+        margin-left: 2rem;
     }
 
     .nav_item {
@@ -882,5 +994,59 @@ body {
     .testi_card {
         max-width: 328px;
         padding: 2rem 2rem;
+    }
+
+    .about_us_container {
+        flex-direction: row;
+    }
+
+    .about_us_content {
+        align-items: flex-start;
+    }
+
+    .about_us_desc {
+        text-align: left;
+        line-height: 32px;
+        max-width: 448px;
+    }
+
+    .bg_about_us {
+        display: block;
+        right: 3rem;
+        bottom: 3rem;
+    }
+
+    .footer_container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer_sidemap {
+        align-items: flex-start;
+    }
+
+    .footer_sidemap_content {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-self: flex-start;
+        column-gap: 3.5rem;
+    }
+
+    .footer_sidemap_list_item {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .footer_cw_desc {
+        max-width: 360px;
+    }
+
+    .footer_cw {
+        align-items: flex-start;
+    }
+
+    .footer_cw_desc {
+        text-align: left;
     }
 }
