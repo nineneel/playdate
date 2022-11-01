@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../dist/output.css" rel="stylesheet" />
+        <title>Playdate</title>
+
+        <!-- Icons From Freather Icons -->
+        <script src="../node_modules/feather-icons/dist/feather.js"></script>
+    </head>
+    <body class="font-primary">
+        <!-- Header Start -->
+        <header
+            class="bg-white fixed top-0 left-0 w-full flex justify-center z-50 border-y-4 border-solid border-black xl:px-28"
+        >
+            <div class="container">
+                <div
+                    class="flex items-center justify-between px-4 lg:px-0 py-3 relative"
+                >
+                    <ul class="flex gap-x-8 items-center">
+                        <li>
+                            <a href="./index.html">
+                                <img
+                                    src="../dist/img/logo.svg"
+                                    alt="Play Field Logo"
+                                    class="h-14 block"
+                                />
+                            </a>
+                        </li>
+                        <li class="hidden lg:block">
+                            <form class="relative">
+                                <input
+                                    type="search"
+                                    class="border-2 border-black rounded-2xl px-4 py-2 text-base font-medium capitalize focus:outline-none focus:border-primary w-64 2xl:w-[464px] peer"
+                                    placeholder="search..."
+                                />
+                                <span
+                                    class="absolute right-4 top-1/2 -translate-y-1/2 peer-focus:hidden"
+                                >
+                                    <i data-feather="search"></i>
+                                </span>
+                            </form>
+                        </li>
+                    </ul>
+                    <div
+                        class="flex items-center px-4 py-6 lg:py-0 lg:px-0 lg:pl-4"
+                    >
+                        <button
+                            id="button-nav"
+                            class="block absolute right-4 lg:hidden"
+                            type="button"
+                            name="toggler"
+                        >
+                            <span
+                                class="block w-[35px] h-[3px] bg-black my-2"
+                            ></span>
+                            <span
+                                class="block w-[35px] h-[3px] bg-black my-2"
+                            ></span>
+                            <span
+                                class="block w-[35px] h-[3px] bg-black my-2"
+                            ></span>
+                        </button>
+                        <nav
+                            class="hidden justify-center absolute right-2 left-2 top-full bg-white rounded-lg shadow-lg border-2 border-solid border-black mt-2 my-4 lg:flex lg:static lg:border-none lg:shadow-none lg:rounded-none lg:my-0 lg:mt-0"
+                            id="nav"
+                        >
+                            <ul
+                                class="p-4 flex flex-col items-center lg:flex-row lg:gap-x-12 lg:p-0 xl:gap-x-12"
+                            >
+                                <li class="my-2">
+                                    <a
+                                        href="#learningkit"
+                                        class="text-base font-extrabold"
+                                        >Learning Kit</a
+                                    >
+                                </li>
+                                <li class="my-2">
+                                    <a
+                                        href="#meetnewfriend"
+                                        class="text-base font-extrabold"
+                                        >Meet New Friends</a
+                                    >
+                                </li>
+
+                                <li class="my-2 mt-4 lg:mt-2">
+                                    <a
+                                        href="#"
+                                        class="px-5 py-2 bg-primary rounded-2xl border-2 border-solid border-black font-extrabold text-base uppercase hover:bg-purple"
+                                        >Log In</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Learning Kit Section Start -->
+        <section
+            id="learningkit"
+            class="mt-[88px] pt-10 pb-20 lg:bg-learningkit-image"
+        >
+            <div class="container mx-auto">
+                <div class="px-4 flex flex-col justify-center items-center">
+                    <div class="flex flex-wrap">
+                        <h2 class="w-full font-bold text-3xl text-center mb-1">
+                            PICK A LEARNING KIT TO PLAY
+                        </h2>
+                        <p class="w-full font-semibold text-base text-center">
+                            Choose a Learning Kit That Suits Your Kid’s Interest
+                            and Age!
+                        </p>
+                    </div>
+                    <div class="flex mt-6 gap-x-4">
+                        <button
+                            class="px-[14px] py-2 border-2 border-black rounded-full font-extrabold text-xs"
+                        >
+                            Best
+                        </button>
+                        <button
+                            class="px-[14px] py-2 border-2 border-black rounded-full font-extrabold text-xs bg-orange"
+                        >
+                            New
+                        </button>
+                        <button
+                            class="px-[14px] py-2 border-2 border-black rounded-full font-extrabold text-xs"
+                        >
+                            Age
+                        </button>
+                        <button
+                            class="px-[14px] py-2 border-2 border-black rounded-full font-extrabold text-xs"
+                        >
+                            Price
+                        </button>
+                    </div>
+                    <div
+                        class="w-full grid grid-cols-3 justify-evenly place-items-center mt-8 gap-20"
+                    >
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+
+                        <!-- Start Card Product -->
+                        <div
+                            id="product-card"
+                            class="flex bg-white card-product order-3"
+                        >
+                            <h1 class="font-bold text-xl text-center mb-3">
+                                MY BODY 3
+                            </h1>
+                            <div
+                                class="border-2 border-solid border-black rounded-lg overflow-hidden mb-3"
+                            >
+                                <img
+                                    src="../dist/img/learning_kit/1.png"
+                                    alt="My Body Image Preview"
+                                />
+                            </div>
+
+                            <h4 class="font-bold text-xs text-left mb-2">
+                                It’s time to elevate your five senses!
+                            </h4>
+                            <p class="font-medium text-xs text-left mb-3">
+                                Learn human body parts using their five senses
+                                through matching the cards
+                            </p>
+                            <div
+                                class="w-full flex justify-between items-baseline"
+                            >
+                                <p class="font-extrabold text-base">
+                                    Rp. 336.000 / sesi
+                                </p>
+                                <div
+                                    class="flex gap-x-1 items-center font-primary"
+                                >
+                                    <span
+                                        class="font-extrabold text-xs flex items-center"
+                                    >
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 9 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.05164 1.57506C4.23505 1.20348 4.76493 1.20348 4.94834 1.57506L5.41377 2.51796C5.48654 2.66538 5.62713 2.76761 5.78981 2.79139L6.83143 2.94364C7.24139 3.00356 7.40478 3.50748 7.10798 3.79656L6.35505 4.52992C6.23711 4.64479 6.18328 4.81035 6.21111 4.97262L6.3887 6.00806C6.45876 6.41654 6.02999 6.72803 5.66317 6.53512L4.73272 6.0458C4.58702 5.96919 4.41296 5.96919 4.26726 6.0458L3.33681 6.53512C2.96999 6.72803 2.54122 6.41654 2.61128 6.00806L2.78887 4.97262C2.8167 4.81035 2.76287 4.64479 2.64493 4.52992L1.892 3.79656C1.5952 3.50748 1.75859 3.00356 2.16855 2.94364L3.21017 2.79139C3.37285 2.76761 3.51344 2.66538 3.58621 2.51796L4.05164 1.57506Z"
+                                                fill="#FDD00C"
+                                            />
+                                            <path
+                                                d="M5.17252 1.46441C4.89739 0.907032 4.10259 0.90703 3.82746 1.46441L3.36204 2.4073C3.32565 2.48102 3.25535 2.53213 3.17402 2.54402L2.13239 2.69627C1.51746 2.78615 1.27237 3.54203 1.71756 3.97565L2.4705 4.70901C2.52946 4.76644 2.55638 4.84923 2.54246 4.93036L2.36487 5.9658C2.25979 6.57852 2.90295 7.04575 3.45317 6.75639L4.38363 6.26707C4.45647 6.22876 4.54351 6.22876 4.61635 6.26707L5.54681 6.75639C6.09703 7.04575 6.74019 6.57853 6.63511 5.9658L6.45752 4.93036C6.4436 4.84923 6.47052 4.76644 6.52948 4.70901L7.28242 3.97565C7.72761 3.54203 7.48252 2.78615 6.86759 2.69627L5.82596 2.54402C5.74463 2.53213 5.67433 2.48102 5.63794 2.4073L5.17252 1.46441Z"
+                                                stroke="#18191F"
+                                                stroke-width="0.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        5.0</span
+                                    >
+                                    <p class="font-medium text-xs">(28)</p>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-4 mb-2 px-4 py-1 border-2 border-black rounded-2xl uppercase font-extrabold text-lg bg-primary hover:bg-purple"
+                            >
+                                Book Now
+                            </button>
+                        </div>
+                        <!-- End Card Product -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Learning Kit Section End -->
+
+        <!-- Footer Start -->
+        <footer id="footer" class="bg-blue">
+            <div class="pt-10 pb-20">
+                <div class="our-container">
+                    <div class="flex flex-wrap">
+                        <div class="flex flex-wrap gap-y-3 w-full lg:w-1/2">
+                            <h4 class="font-extrabold text-2xl w-full">
+                                Sitemap.
+                            </h4>
+                            <ul
+                                class="font-medium text-base gap-y-2 w-full lg:w-1/2"
+                            >
+                                <li><a href="#home"> Home </a></li>
+                                <li><a href="#home"> Learning kit </a></li>
+                                <li><a href="#home"> Facilities </a></li>
+                                <li><a href="#home"> Help centre </a></li>
+                            </ul>
+                            <ul
+                                class="font-medium text-base gap-y-2 w-full lg:w-1/2"
+                            >
+                                <li><a href="#home"> Location </a></li>
+                                <li><a href="#home"> Documentation </a></li>
+                                <li><a href="#home"> Testimony </a></li>
+                                <li><a href="#home"> About us </a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="flex flex-col gap-3 w-full mt-8 lg:w-1/2 lg:mt-0"
+                        >
+                            <h4 class="font-extrabold text-2xl">
+                                Connect with us.
+                            </h4>
+                            <p class="font-medium text-base">
+                                Pesan janji temu jadi lebih mudah bagi para
+                                orang tua yang bekerja dengan Playfield untuk
+                                akhir pekan. Klik di sini untuk melihat lebih
+                                lanjut!
+                            </p>
+                            <div class="flex gap-x-2 justify-left">
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i
+                                        data-feather="twitter"
+                                        class="w-5 h-5"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i
+                                        data-feather="facebook"
+                                        class="w-5 h-5"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i
+                                        data-feather="instagram"
+                                        class="w-5 h-5"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i
+                                        data-feather="youtube"
+                                        class="w-5 h-5"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i data-feather="mail" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

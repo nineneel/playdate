@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../dist/output.css" rel="stylesheet" />
+        <title>Playdate</title>
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+
+        <!-- Icons From Freather Icons -->
+        <script src="../node_modules/feather-icons/dist/feather.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <body class="font-primary">
+        <!-- Header Start -->
+        <header
+            class="bg-white fixed top-0 left-0 w-full flex justify-center z-50 border-y-4 border-solid border-black xl:px-28"
+        >
+            <div class="container">
+                <div
+                    class="flex items-center justify-between px-4 lg:px-0 py-3 relative"
+                >
+                    <ul class="flex gap-x-8 items-center">
+                        <li>
+                            <a href="./index.html">
+                                <img
+                                    src="../dist/img/logo.svg"
+                                    alt="Play Field Logo"
+                                    class="h-14 block"
+                                />
+                            </a>
+                        </li>
+                        <li class="hidden lg:block">
+                            <form class="relative">
+                                <input
+                                    type="search"
+                                    class="border-2 border-black rounded-2xl px-4 py-2 text-base font-medium capitalize focus:outline-none focus:border-primary w-64 2xl:w-[464px] peer"
+                                    placeholder="search..."
+                                />
+                                <span
+                                    class="absolute right-4 top-1/2 -translate-y-1/2 peer-focus:hidden"
+                                >
+                                    <i data-feather="search"></i>
+                                </span>
+                            </form>
+                        </li>
+                    </ul>
+                    <div
+                        class="flex items-center px-4 py-6 lg:py-0 lg:px-0 lg:pl-4"
+                    >
+                        <button
+                            id="button-nav"
+                            class="block absolute right-4 lg:hidden"
+                            type="button"
+                            name="toggler"
+                        >
+                            <span
+                                class="block w-[35px] h-[3px] bg-black my-2"
+                            ></span>
+                            <span
+                                class="block w-[35px] h-[3px] bg-black my-2"
+                            ></span>
+                            <span
+                                class="block w-[35px] h-[3px] bg-black my-2"
+                            ></span>
+                        </button>
+                        <nav
+                            class="hidden justify-center absolute right-2 left-2 top-full bg-white rounded-lg shadow-lg border-2 border-solid border-black mt-2 my-4 lg:flex lg:static lg:border-none lg:shadow-none lg:rounded-none lg:my-0 lg:mt-0"
+                            id="nav"
+                        >
+                            <ul
+                                class="p-4 flex flex-col items-center lg:flex-row lg:gap-x-12 lg:p-0 xl:gap-x-12"
+                            >
+                                <li class="my-2">
+                                    <a
+                                        href="#learningkit"
+                                        class="text-base font-extrabold"
+                                        >Learning Kit</a
+                                    >
+                                </li>
+                                <li class="my-2">
+                                    <a
+                                        href="#meetnewfriend"
+                                        class="text-base font-extrabold"
+                                        >Meet New Friends</a
+                                    >
+                                </li>
+
+                                <li class="my-2 mt-4 lg:mt-2">
+                                    <a
+                                        href="#"
+                                        class="px-5 py-2 bg-primary rounded-2xl border-2 border-solid border-black font-extrabold text-base uppercase hover:bg-purple"
+                                        >Log In</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Detail Product Start -->
+        <section class="mt-[88px] pt-10 pb-20">
+            <div class="our-container mx-auto">
+                <div class="flex flex-col gap-5 px-4">
+                    <!-- Title Detail Product Start -->
+                    <h1 class="font-extrabold text-4xl text-center">
+                        My Body Senses
+                    </h1>
+                    <!-- Title Detail Product End -->
+
+                    <!-- Image Detail Start -->
+                    <div
+                        class="rounded-lg border-2 border-black overflow-hidden"
+                    >
+                        <div class="swiper mySwiper relative">
+                            <button
+                                id="left-detail"
+                                type="button"
+                                class="flex justify-center items-center border-solid border-2 border-black rounded-full bg-primary w-10 h-10 absolute left-4 top-1/2 -translate-y-1/2 z-10 hover:bg-purple"
+                            >
+                                <i data-feather="chevron-left"></i>
+                            </button>
+                            <div class="swiper-wrapper items-center">
+                                <div class="swiper-slide swiper-slide-product">
+                                    <img
+                                        src="../dist/img/capture_your_moment/capture_your_moment_1.jpg"
+                                        alt="detail product"
+                                        class="object-contain"
+                                    />
+                                </div>
+                                <div class="swiper-slide swiper-slide-product">
+                                    <img
+                                        src="../dist/img/capture_your_moment/capture_your_moment_2.jpg"
+                                        alt="detail product"
+                                        class="object-contain"
+                                    />
+                                </div>
+                                <div class="swiper-slide swiper-slide-product">
+                                    <img
+                                        src="../dist/img/capture_your_moment/capture_your_moment_3.jpg"
+                                        alt="detail product"
+                                        class="object-contain"
+                                    />
+                                </div>
+                                <div class="swiper-slide swiper-slide-product">
+                                    <img
+                                        src="../dist/img/capture_your_moment/capture_your_moment_4.jpg"
+                                        alt="detail product"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                id="right-detail"
+                                type="button"
+                                class="flex justify-center items-center border-solid border-2 border-black rounded-full bg-primary w-10 h-10 absolute right-4 top-1/2 -translate-y-1/2 z-10 hover:bg-purple"
+                            >
+                                <i data-feather="chevron-right"></i>
+                            </button>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- Image Detail End -->
+
+                    <!-- Detail Content Start -->
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-3 justify-items-start items-center gap-6"
+                    >
+                        <h3 class="font-extrabold text-xl lg:col-span-2">
+                            It’s time to elevate your five senses!
+                        </h3>
+                        <div
+                            class="bg-green px-3 py-1 border-2 border-black rounded-lg lg:justify-self-end"
+                        >
+                            <h4 class="font-semibold text-2xl">Age: > 12</h4>
+                        </div>
+                        <p class="font-medium text-base lg:col-span-2">
+                            Learning Kit ini diharapkan dapat membantu membangun
+                            kesadaran dan pemahaman peserta didik tentang panca
+                            indera beserta fungsinya dan memperhatikan serta
+                            menamai bagian anggota tubuh dengan membantu peserta
+                            didik menemukan dan menjelajahi lima panca indera
+                            beserta fungsinya. Kit ini juga diharapkan dapat
+                            mendorong interaksi antar peserta didik saat mereka
+                            mengeksplorasi indera mereka dengan saling
+                            berkomunikasi antar rekan sehingga membuat
+                            pembelajaran menjadi lebih menyenangkan.
+                        </p>
+                        <div class="flex gap-3 lg:col-start-1 lg:col-span-2">
+                            <div
+                                class="border-2 border-black rounded-full bg-white text-center"
+                            >
+                                <p class="font-medium text-sm px-2">
+                                    Five senses
+                                </p>
+                            </div>
+                            <div
+                                class="border-2 border-black rounded-full bg-white text-center"
+                            >
+                                <p class="font-medium text-sm px-2">
+                                    Five senses
+                                </p>
+                            </div>
+                            <div
+                                class="border-2 border-black rounded-full bg-white text-center"
+                            >
+                                <p class="font-medium text-sm px-2">
+                                    Five senses
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center lg:col-start-1 lg:col-span-2"
+                        >
+                            <img
+                                src="/dist/img/star_2.svg"
+                                alt="star"
+                                class="mr-2"
+                            />
+                            <h5 class="font-extrabold text-xl mr-5">5.0</h5>
+                            <p class="font-medium text-xl">(28)</p>
+                        </div>
+                        <div
+                            class="flex flex-col lg:items-end lg:col-start-3 lg:row-start-3 lg:self-end lg:row-span-2 lg:justify-self-end"
+                        >
+                            <h3 class="font-semibold text-2xl mb-6">
+                                Rp. 149.000 / sesi
+                            </h3>
+                            <a
+                                href="#"
+                                class="font-extrabold text-xl bg-primary rounded-2xl border-solid border-2 border-black px-8 py-2 hover:bg-purple"
+                                >BOOK NOW</a
+                            >
+                        </div>
+                    </div>
+                    <!-- Detail Content End -->
+
+                    <!-- Steps Start -->
+                    <div class="flex flex-col gap-y-4 mt-8 group">
+                        <!-- Cara Bermain Start -->
+                        <div
+                            id="content-wrapper"
+                            class="bg-green border-t-8 border-green p-4 flex flex-col"
+                        >
+                            <div
+                                id="content-detail-title"
+                                class="flex justify-between items-center cursor-pointer"
+                            >
+                                <h2 class="font-extrabold text-xl">
+                                    Cara bermain
+                                </h2>
+                                <img
+                                    src="/dist/img/chevron-up.svg"
+                                    id="icon-up-content"
+                                    class="w-8 h-8 lg:mr-4 hidden"
+                                />
+                                <img
+                                    src="/dist/img/chevron-down.svg"
+                                    id="icon-down-content"
+                                    class="w-8 h-8 lg:mr-4"
+                                />
+                            </div>
+
+                            <div id="content-detail" class="hidden">
+                                <p class="font-medium text-base mt-4 lg:pr-16">
+                                    Peserta didik dapat mencocokkan dan menempel
+                                    kartu tersebut sembari membahas apa yang
+                                    mereka lihat, rasakan, dengar, dan lainnya
+                                    dengan teman sekelas mereka untuk mendorong
+                                    komunikasi antar peserta didik. Selain itu,
+                                    pengajar juga dapat berdiskusi dengan
+                                    peserta didik seperti mengapa gambar yang
+                                    mereka tempelkan sesuai dengan panca indera
+                                    yang mereka cocokkan di board.
+                                </p>
+                                <p class="font-medium text-base mt-4 lg:pr-16">
+                                    Misalnya, jika peserta didik menempelkan
+                                    gambar flashlight di halaman penglihatan
+                                    (sight), pengajar dapat mendorong peserta
+                                    didik untuk mengamati dan bercerita (see,
+                                    think, and wonder) seperti kita melihat
+                                    menggunakan bagian tubuh apa (mata), mengapa
+                                    dibutuhkan flashlight (untuk menerangi
+                                    tempat yang gelap), apakah ada sesuatu yang
+                                    menarik dalam kegelapan sehingga
+                                    diperlukannya flashlight (ingin melihat
+                                    rusa; lalu pengajar dapat membalas seperti:
+                                    apakah kamu tahu bahwa rusa memiliki
+                                    penglihatan malam yang sangat baik, mengapa
+                                    demikian), dan seterusnya.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Cara Bermain End -->
+
+                        <!-- Detail Start -->
+                        <div
+                            id="content-wrapper"
+                            class="bg-green border-t-8 border-green p-4 flex flex-col"
+                        >
+                            <div
+                                id="content-detail-title"
+                                class="flex justify-between items-center cursor-pointer"
+                            >
+                                <h2 class="font-extrabold text-xl">Details</h2>
+                                <img
+                                    src="/dist/img/chevron-up.svg"
+                                    id="icon-up-content"
+                                    class="w-8 h-8 lg:mr-4 hidden"
+                                />
+                                <img
+                                    src="/dist/img/chevron-down.svg"
+                                    id="icon-down-content"
+                                    class="w-8 h-8 lg:mr-4"
+                                />
+                            </div>
+                            <div id="content-detail" class="hidden">
+                                <p class="font-medium text-base mt-4 lg:pr-16">
+                                    Peserta didik dapat mencocokkan dan menempel
+                                    kartu tersebut sembari membahas apa yang
+                                    mereka lihat, rasakan, dengar, dan lainnya
+                                    dengan teman sekelas mereka untuk mendorong
+                                    komunikasi antar peserta didik. Selain itu,
+                                    pengajar juga dapat berdiskusi dengan
+                                    peserta didik seperti mengapa gambar yang
+                                    mereka tempelkan sesuai dengan panca indera
+                                    yang mereka cocokkan di board.
+                                </p>
+                                <p class="font-medium text-base mt-4 lg:pr-16">
+                                    Misalnya, jika peserta didik menempelkan
+                                    gambar flashlight di halaman penglihatan
+                                    (sight), pengajar dapat mendorong peserta
+                                    didik untuk mengamati dan bercerita (see,
+                                    think, and wonder) seperti kita melihat
+                                    menggunakan bagian tubuh apa (mata), mengapa
+                                    dibutuhkan flashlight (untuk menerangi
+                                    tempat yang gelap), apakah ada sesuatu yang
+                                    menarik dalam kegelapan sehingga
+                                    diperlukannya flashlight (ingin melihat
+                                    rusa; lalu pengajar dapat membalas seperti:
+                                    apakah kamu tahu bahwa rusa memiliki
+                                    penglihatan malam yang sangat baik, mengapa
+                                    demikian), dan seterusnya.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Detail End -->
+
+                        <!-- Detail Start -->
+                        <div
+                            id="content-wrapper"
+                            class="bg-green border-t-8 border-green p-4 flex flex-col"
+                        >
+                            <div
+                                id="content-detail-title"
+                                class="flex justify-between items-center cursor-pointer"
+                            >
+                                <h2 class="font-extrabold text-xl">Calendar</h2>
+                                <img
+                                    src="/dist/img/chevron-up.svg"
+                                    id="icon-up-content"
+                                    class="w-8 h-8 lg:mr-4 hidden"
+                                />
+                                <img
+                                    src="/dist/img/chevron-down.svg"
+                                    id="icon-down-content"
+                                    class="w-8 h-8 lg:mr-4"
+                                />
+                            </div>
+                            <div id="content-detail" class="hidden">
+                                <p class="font-medium text-base mt-4 lg:pr-16">
+                                    Peserta didik dapat mencocokkan dan menempel
+                                    kartu tersebut sembari membahas apa yang
+                                    mereka lihat, rasakan, dengar, dan lainnya
+                                    dengan teman sekelas mereka untuk mendorong
+                                    komunikasi antar peserta didik. Selain itu,
+                                    pengajar juga dapat berdiskusi dengan
+                                    peserta didik seperti mengapa gambar yang
+                                    mereka tempelkan sesuai dengan panca indera
+                                    yang mereka cocokkan di board.
+                                </p>
+                                <p class="font-medium text-base mt-4 lg:pr-16">
+                                    Misalnya, jika peserta didik menempelkan
+                                    gambar flashlight di halaman penglihatan
+                                    (sight), pengajar dapat mendorong peserta
+                                    didik untuk mengamati dan bercerita (see,
+                                    think, and wonder) seperti kita melihat
+                                    menggunakan bagian tubuh apa (mata), mengapa
+                                    dibutuhkan flashlight (untuk menerangi
+                                    tempat yang gelap), apakah ada sesuatu yang
+                                    menarik dalam kegelapan sehingga
+                                    diperlukannya flashlight (ingin melihat
+                                    rusa; lalu pengajar dapat membalas seperti:
+                                    apakah kamu tahu bahwa rusa memiliki
+                                    penglihatan malam yang sangat baik, mengapa
+                                    demikian), dan seterusnya.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Detail End -->
+
+                        <!-- Review Start -->
+                        <div
+                            id="content-wrapper"
+                            class="bg-green border-t-8 border-green p-4 flex flex-col"
+                        >
+                            <div
+                                id="content-detail-title"
+                                class="flex justify-between items-center cursor-pointer"
+                            >
+                                <h2 class="font-extrabold text-xl">Review</h2>
+                                <img
+                                    src="/dist/img/chevron-up.svg"
+                                    id="icon-up-content"
+                                    class="w-8 h-8 lg:mr-4 hidden"
+                                />
+                                <img
+                                    src="/dist/img/chevron-down.svg"
+                                    id="icon-down-content"
+                                    class="w-8 h-8 lg:mr-4"
+                                />
+                            </div>
+                            <div id="content-detail" class="hidden">
+                                <p class="font-medium text-base mt-4 lg:pr-16">
+                                    Peserta didik dapat mencocokkan dan menempel
+                                    kartu tersebut sembari membahas apa yang
+                                    mereka lihat, rasakan, dengar, dan lainnya
+                                    dengan teman sekelas mereka untuk mendorong
+                                    komunikasi antar peserta didik. Selain itu,
+                                    pengajar juga dapat berdiskusi dengan
+                                    peserta didik seperti mengapa gambar yang
+                                    mereka tempelkan sesuai dengan panca indera
+                                    yang mereka cocokkan di board.
+                                </p>
+                                <p class="font-medium text-base mt-4 lg:pr-16">
+                                    Misalnya, jika peserta didik menempelkan
+                                    gambar flashlight di halaman penglihatan
+                                    (sight), pengajar dapat mendorong peserta
+                                    didik untuk mengamati dan bercerita (see,
+                                    think, and wonder) seperti kita melihat
+                                    menggunakan bagian tubuh apa (mata), mengapa
+                                    dibutuhkan flashlight (untuk menerangi
+                                    tempat yang gelap), apakah ada sesuatu yang
+                                    menarik dalam kegelapan sehingga
+                                    diperlukannya flashlight (ingin melihat
+                                    rusa; lalu pengajar dapat membalas seperti:
+                                    apakah kamu tahu bahwa rusa memiliki
+                                    penglihatan malam yang sangat baik, mengapa
+                                    demikian), dan seterusnya.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Review End -->
+                    </div>
+                    <!-- Steps End -->
+                </div>
+            </div>
+        </section>
+        <!-- Detail Product End -->
+
+        <!-- Footer Start -->
+        <footer id="footer" class="bg-blue">
+            <div class="pt-10 pb-20">
+                <div class="our-container">
+                    <div class="flex flex-wrap">
+                        <div class="flex flex-wrap gap-y-3 w-full lg:w-1/2">
+                            <h4 class="font-extrabold text-2xl w-full">
+                                Sitemap.
+                            </h4>
+                            <ul
+                                class="font-medium text-base gap-y-2 w-full lg:w-1/2"
+                            >
+                                <li><a href="#home"> Home </a></li>
+                                <li><a href="#home"> Learning kit </a></li>
+                                <li><a href="#home"> Facilities </a></li>
+                                <li><a href="#home"> Help centre </a></li>
+                            </ul>
+                            <ul
+                                class="font-medium text-base gap-y-2 w-full lg:w-1/2"
+                            >
+                                <li><a href="#home"> Location </a></li>
+                                <li><a href="#home"> Documentation </a></li>
+                                <li><a href="#home"> Testimony </a></li>
+                                <li><a href="#home"> About us </a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="flex flex-col gap-3 w-full mt-8 lg:w-1/2 lg:mt-0"
+                        >
+                            <h4 class="font-extrabold text-2xl">
+                                Connect with us.
+                            </h4>
+                            <p class="font-medium text-base">
+                                Pesan janji temu jadi lebih mudah bagi para
+                                orang tua yang bekerja dengan Playfield untuk
+                                akhir pekan. Klik di sini untuk melihat lebih
+                                lanjut!
+                            </p>
+                            <div class="flex gap-x-2 justify-left">
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i
+                                        data-feather="twitter"
+                                        class="w-5 h-5"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i
+                                        data-feather="facebook"
+                                        class="w-5 h-5"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i
+                                        data-feather="instagram"
+                                        class="w-5 h-5"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i
+                                        data-feather="youtube"
+                                        class="w-5 h-5"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://twitter.com"
+                                    class="flex justify-center items-center bg-grey p-2 rounded-full border-2 border-black hover:bg-primary"
+                                >
+                                    <i data-feather="mail" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <script src="js/detailproduct.js"></script>
+        <script src="js/script.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: "#right-detail",
+                    prevEl: "#left-detail",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
+    </body>
+</html>
